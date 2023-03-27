@@ -25,3 +25,5 @@ Design: The website will have a clean and minimalist design that focuses on the 
 Create a sense of contribution: Promote a feature such as we plant 5 trees every pruchase just like Urth did.
 
 Conclusion: This environment-friendly website for recycled material products will serve as a platform to promote sustainable practices and encourage customers to make eco-friendly choices. The products have not been decided yet; however it will be niche. With its focus on unique and niche products made from recycled materials, it will cater to a specific audience and provide a one-stop-shop for all their eco-friendly shopping needs. 
+
+Registration Form on my branch - https://github.com/naathans/Group-15-HIT-226/tree/naathan
