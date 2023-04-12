@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><!-- The head element contains meta information about the page. -->
+<head>
+	<title>Greeny Home</title>
+	<link href="images/logo.png" rel="icon" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="images/title.png" rel="icon" type="image/x-icon" />
+
+</head>
+<body>
+
+
+<div class="brand"><img alt="" class="logo" src="images/logo.png" style="width:20%" /></div>
+
+<h1>Let's changed the world one step at a time.</h1>
+
+
+<div class="topnav"><a class="active" href="index.htm">Home</a> <a href="ourMission.htm">Our Mission</a> <a href="community.htm">Community</a> <a href="htj.htm">How to join the cause</a></div>
+
+<div class="content-wrapper">
+<div class="portfolio-items-wrapper">
+<div class="portfolio-item-wrapper">
+<div class="portfolio-img-background"></div>
+
+<div class="img-text-wrapper">
+<div class="subtitle"><a href="cameras.htm">Cameras</a></div>
+</div>
+</div>
+
+<div class="portfolio-item-wrapper">
+<div class="portfolio-img-background"></div>
+
+<div class="img-text-wrapper">
+<div class="subtitle"><a href="filters.htm">Filters</a></div>
+</div>
+</div>
+
+<div class="portfolio-item-wrapper">
+<div class="portfolio-img-background"></div>
+
+<div class="img-text-wrapper">
+<div class="subtitle"><a href="carry.htm">Carry</a></div>
+</div>
+</div>
+
+<div class="portfolio-item-wrapper">
+<div class="portfolio-img-background"></div>
+
+<div class="img-text-wrapper">
+<div class="subtitle"><a href="cases.htm">Cases</a></div>
+</div>
+</div>
+
+<div class="portfolio-item-wrapper">
+<div class="portfolio-img-background"></div>
+
+<div class="img-text-wrapper">
+<div class="subtitle"><a href="lenses.htm">Lenses</a></div>
+</div>
+</div>
+
+<div class="portfolio-item-wrapper">
+<div class="portfolio-img-background"></div>
+
+<div class="img-text-wrapper">
+<div class="subtitle"><a href="sale.htm">Sale</a></div>
+</div>
+</div>
+
+</div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<button class="collapsible">How do you build your products?</button>
+
+<div class="content">
+<p>Using environmental appropiate practices in our manufacturer places</p>
+</div>
+
+<button class="collapsible">How long does shipping take?</button>
+
+<div class="content">
+<p>2-7 Business Days</p>
+</div>
+
+<button class="collapsible">Where are your products made?</button>
+
+<div class="content">
+<p>Australia</p>
+</div>
+
+<button class="collapsible">What hours can I call in?</button>
+
+<div class="content">
+<p>8am - 4pm AEST</p>
+</div>
+
+<button class="collapsible">Is it expensive?</button>
+
+<div class="content">
+<p>No</p>
+</div>
+
+<div class="botnav"><input placeholder="Search.." type="text" /></div>
+
+<div class="footer">COPYRIGHT &copy; All rights researved by Greeny.</div>
+
+
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+  portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+          console.log(portfolioItem.childNodes[1].classList);
+          portfolioItem.childNodes[1].classList.add('img-darken');
+      })
+      
+      portfolioItem.addEventListener('mouseout', () => {
+          console.log(portfolioItem.childNodes[1].classList);
+          portfolioItem.childNodes[1].classList.remove('img-darken');
+      })
+  })
+
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  } 
+});
+}
+</script>
+</body>
+
+
+
+
+</html>
