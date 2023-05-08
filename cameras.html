@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style3.css">
+	
+</head>
+<body class="nl-blurred">
+	<div class="container demo-1">
+		<header>
+			<h1>OK! Lets start with a few questions. <span>Are you ready?</span></h1>	
+		</header>
+		<div class="main clearfix">
+			<form id="nl-form" class="nl-form">
+				<label for="time-period"><h2>My experience in "greening" photography for about</h2></label>
+				<select name="time-period" id="time-period">
+					<option value="1" selected>time period</option>
+					<option value="2">Less than 1 year</option>
+					<option value="3">Around 2 to 5 years</option>
+					<option value="4">I am a expert!!!</option>
+					<option value="5">Beginner</option>
+				</select>
+				<br>
+				<label for="camera-quality"><h2>The type of the camera i am looking for is</h2></label>
+				<select name="camera-quality" id="camera-quality">
+					<option value="1" selected>quality</option>
+					<option value="2">affordable and useful</option>
+					<option value="3">resourceful</option>
+					<option value="4">specialized</option>
+					<option value="5">expensive but useful</option>
+				</select>
+				<label for="budget"><h2>My budget is around</h2></label>
+				<select name="budget" id="budget">
+					<option value="0">amount</option>
+					<option value="1">below $1000</option>
+					<option value="2">between $1000 to $3000</option>
+					<option value="3">More than $3000</option>
+					<option value="4">Price does not matter</option>
+				</select>
+				<label for="camera-type"><h2>I use it specialising in</h2></label>
+				<select name="camera-type" id="camera-type">
+					<option value="0">purpose</option>
+					<option value="1">Point and Shoot</option>
+					<option value="2">DSLR</option>
+					<option value="3">Mirrorless</option>
+					<option value="4">Film</option>
+				</select>
+				<div>
+					<button onclick="revealMessage()">Find the best fit camera</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="jv2.js"></script>
+</body>
+</html>

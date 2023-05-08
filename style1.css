@@ -1,0 +1,165 @@
+/* style.css */
+/* Add your custom CSS code here */
+
+
+
+/* Search bar */
+#searchBar {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#searchInput {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  color: #3A5C5E;
+}
+
+#searchButton {
+  background-color: #F8EFEF;
+  color: #3A5C5E;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#searchButton:hover {
+  background-color: #D3E1E1;
+}
+
+/* Header and footer */
+header {
+  background-color: #3A5C5E;
+  color: #F8EFEF;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #3A5C5E;
+  color: #F8EFEF;
+  padding: 1rem;
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gridItem {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.gridItem:hover {
+  transform: translateY(-5px);
+}
+
+.keywords {
+  margin-top: 10px;
+}
+
+.description {
+  display: none;
+  margin-top: 10px;
+}
+
+
+
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gridItem {
+  background-color: #798dc5;
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.gridItem:hover {
+  transform: translateY(-5px);
+}
+
+.gridItem:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.gridItem:hover:before {
+  opacity: 1;
+}
+
+.gridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gridItem h3,
+.gridItem p {
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.keywords {
+  margin-top: 10px;
+}
+
+.description {
+  display: none;
+  margin-top: 10px;
+}

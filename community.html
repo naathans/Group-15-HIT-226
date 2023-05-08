@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><!-- The head element contains meta information about the page. -->
+<head>
+	<title>Greeny Home</title>
+	<link href="images/logo.png" rel="icon" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="communityStyle.css">
+  <link href="images/title.png" rel="icon" type="image/x-icon" />
+
+</head>
+
+<body>
+    <div class="brand"><img alt="" class="logo" src="images/logo.png" style="width:20%" /></div>
+
+    <h1>Let's changed the world one step at a time.</h1>
+
+    <div class="topnav"><a href="index.html">Home</a> <a href="ourMission.htm">Our Mission</a> <a class="active" href="community.html">Community</a> <a href="htj.htm">How to join the cause</a></div>
+
+    <div class="top-bar">
+        <h1>
+            Greeny Forum
+        </h1>
+    </div>
+    <div class="main">
+        <ol>
+        </ol>
+    </div>
+    <script src="data.js"></script>
+    <script>
+        console.log(threads);
+        var container = document.querySelector('ol');
+        for (let thread of threads) {
+            var html = `
+            <li class="row">
+                <a href="thread.html?${thread.id}">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+                    <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            `
+            container.insertAdjacentHTML('beforeend', html);
+        }
+    </script>
+</body>
+
+</html>
